@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHD-ISAC node</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+</head>
+
+<body>
+<div id="splash-loader">
+    <div id="loader"></div>
+    <video id="ISACactive">
+        <source src="vid/ISAC active.mp4" type="video/mp4">
+    </video>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<div id="loaded">
+    <!--<audio autoplay>
+  <source id="log-in" src="sounds/Log-in.mp3" type="audio/mp3"/>
+</audio>-->
+    <div id="map"></div>
+    <div id="startdiv"><video id="start">
+<source src="vid/Faye and Paul.mp4" type="video/mp4">
+        </video></div>
+    <input type='number' id='first' class='balancable'/>
+    <input type='number' id='second' class='balancable'/>
+<!--<video id="ISACend">
+    <source src="vid/ISACend.mp4" type="video/mp4">
+    </video>-->
+    <!--<video id="update">
+    <source src="vid/1.8update.mp4" type="video/mp4">
+    </video>-->
+    <div id="tower1src">
+        <video id="tower1">
+            <source src="vid/rooftop1.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+    <script src="js/threejs.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<!-- the above js links are libraries DO NOT MODIFY THEM -->
+    <script src="js/main.js"></script>
+<!-- run a login JS script that will loop until media in main.js is succesfully loaded to prevent any buffering of videos. If videos take too long to load have a fail safe where connection error will be shown with code -->
+    <article id="circle" width="150" height="150"></article>
+    
+</body>
+</html>
